@@ -1,0 +1,50 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<main>
+    <div class="center">
+        <h1>Big Mike's Contact List! 🫂</h1>
+        <h3>You are using SQLite3 version: {{sql_version[0][0]}}</h3>
+        <h3>Your IP Address is: {{user_ip}}</h3>
+        <br>
+        <hr class="center"><br>
+    </div>
+    <div class="center">
+        <p><a class="add-user" href="{{ url_for('add_user') }}"><strong>Add User ➕</strong></a></p>
+        <br>
+    </div>
+    <div class="center user-table">
+        <table class="center">
+            <thead>
+                <th>Number</th>
+                <th>Name</th>
+                <th>Contact</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </thead>
+            <tbody>
+                {% for row in data %}
+                <tr>
+                    <td>{{loop.index}}</td>
+                    <td>{{row.user_name}}</td>
+                    <td>{{row.contact}}</td>
+                    <td><a href="{{ url_for('user_data', user_name = row['user_name']) }}">Edit</a></td></td>
+                    <td><a href="{{ url_for('delete_user', user_id = row.user_id) }}"onclick="return confirm('Are You Sure')">Delete</a></td>
+                </tr>
+                {%endfor%}
+            </tbody>
+        </table>
+    </div>
+</main>
+
+{% endblock %}
+
+</html>
+

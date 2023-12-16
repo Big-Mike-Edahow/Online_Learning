@@ -1,0 +1,33 @@
+<!-- add_user.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends 'base.html' %}
+
+{% block title %}Add User{% endblock %}
+
+{% block content %}
+
+<main>
+    <div class="center">
+        <h1>Add A User! ✅</h1>
+        <br><hr class="center"><br>
+    </div>
+    <div class="center user-table">
+        <form method="post" action="{{ url_for('add_user') }}">
+            <label for="user-name"><strong>User Name: </strong></label>
+            <input type="text" name="user-name" required>
+            <br>
+            <label for="contact"><strong>Contact: </strong></label>
+            <input type="text" name="contact" required>
+            <br><br>
+            <input type='submit' value='Submit'>
+        </form>
+    </div>
+</main>
+
+{% endblock %}
+
+</html>
+

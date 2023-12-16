@@ -1,0 +1,23 @@
+/* style.css */
+
+body {
+    background-color:rgb(206, 215, 224);
+}
+
+header h1 {
+    text-align: center;
+    font-size: 40px;
+    color: firebrick
+}
+
+thead {
+    background-color: rgb(145, 123, 126);
+}
+
+tbody {
+    background-color: aliceblue;
+}
+
+td, th {
+    border: 1px solid black;
+}

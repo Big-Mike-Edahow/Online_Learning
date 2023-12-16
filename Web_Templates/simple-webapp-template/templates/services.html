@@ -1,0 +1,32 @@
+<!-- services.html -->
+
+{% extends 'base.html' %}
+
+{% block main %}
+
+<h1>{% block title %} Services {% endblock %}</h1>
+
+<main class="services-content">
+    <h1>Services</h1>
+        <div class="card-container">
+            <ul>
+                <li><img src="{{ url_for('static', filename='images/Python_Rocket.jpg') }}" width="320px" height="240px"/>
+                    <p>At ACME Industries our constant endeavor is to innovate and create top quality products and services.
+                        Here are a few milestones we have achieved in our pursuit for excellence.</p>
+                </li>
+                <li>
+                    <img src="{{ url_for('static', filename='images/Python_Computer.jpg') }}" width="320px" height="240px"/>
+                    <p>At ACME Industries our constant endeavor is to innovate and create top quality products and services.
+                        Here are a few milestones we have achieved in our pursuit for excellence.</p>
+                </li>
+                <li><img src="{{ url_for('static', filename='images/Python_Document.jpg') }}" width="320px" height="240px"/>
+                    <p>At ACME Industries our constant endeavor is to innovate and create top quality products and services.
+                        Here are a few milestones we have achieved in our pursuit for excellence.</p>
+                </li>
+            </ul>
+        </div>
+        <br>
+</main>
+
+
+{% endblock %}

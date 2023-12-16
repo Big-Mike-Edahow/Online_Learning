@@ -1,0 +1,25 @@
+<!-- signup.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<main>
+    <h3 class="center">Account Sign Up🖊️</h3>
+    <h1 class="center">👤</h1>
+    <div class="center">
+        <form method="POST" action="/signup">
+            <input type="email" name="email" placeholder="Email" autofocus=""><br>
+            <input type="text" name="name" placeholder="Name" autofocus=""><br>
+            <input type="password" name="password" placeholder="Password"><br><br>
+            <button>Sign Up</button>
+        </form>
+    </div>
+</main>
+
+{% endblock %}
+
+</html>

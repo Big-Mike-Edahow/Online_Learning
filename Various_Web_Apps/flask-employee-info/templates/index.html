@@ -1,0 +1,20 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends 'base.html' %}
+
+<h1>{% block title %} Employee Info Home {% endblock %}</h1>
+
+{% block content %}
+
+<img src="https://big-mike-edahow.github.io/images/South_Fork_Sunset.jpg" 
+        alt="South Fork sunset" width="256px" height="192px">
+    
+<h3><a href="/list">View the list of employees</a></h3>
+<h3><a href="/employee">Add a new employee</a></h3>
+
+{% endblock %}
+
+</html>

@@ -1,0 +1,25 @@
+<!-- login.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<main>
+    <h3 class="center">Account Login🖊️</h3>
+    <h1 class="center">👤</h1>
+    <div class="center">
+        <form method="POST" action="/login">
+            <input type="email" name="email" placeholder="Your Email" autofocus=""><br>
+            <input type="password" name="password" placeholder="Your Password"><br><br>
+            <label><input type="checkbox" name="remember">Remember me✔️</label><br><br>
+            <button>Login</button>
+        </form>
+    </div>
+</main>
+
+{% endblock %}
+
+</html>

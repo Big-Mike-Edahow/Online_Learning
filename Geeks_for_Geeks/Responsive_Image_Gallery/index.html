@@ -1,0 +1,37 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./static/css/style.css" type="text/css" rel="stylesheet">
+    <title>Responsive Image Gallery</title>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Responsive Image Gallery</h1>
+    </div>
+    <div class="gallery">
+        <img src="./static/images/Image_01.jpg" alt="Image 01" onclick="showImage(src)">
+        <img src="./static/images/Image_02.jpg" alt="Image 02" onclick="showImage(src)">
+        <img src="./static/images/Image_03.jpg" alt="Image 03" onclick="showImage(src)">
+        <img src="./static/images/Image_04.jpg" alt="Image 04" onclick="showImage(src)">
+        <img src="./static/images/Image_05.jpg" alt="Image 05" onclick="showImage(src)">
+        <img src="./static/images/Image_06.jpg" alt="Image 06" onclick="showImage(src)">
+        <img src="./static/images/Image_07.jpg" alt="Image 07" onclick="showImage(src)">
+        <img src="./static/images/Image_08.jpg" alt="Image 08" onclick="showImage(src)">
+        <img src="./static/images/Image_09.jpg" alt="Image 09" onclick="showImage(src)">
+        <img src="./static/images/Image_10.jpg" alt="Image 10" onclick="showImage(src)">
+    </div>
+    <div class="image-popup-container" id="imagePopup">
+        <span class="close-button" onclick="closeImage()">×</span>
+        <img src="" alt="Popup Image" id="popupImage">
+    </div>
+    <script src="./static/js/script.js"></script>
+</body>
+
+</html>
+

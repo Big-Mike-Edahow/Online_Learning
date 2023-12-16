@@ -1,0 +1,31 @@
+<!-- edit-note.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends 'base.html'%}
+{% block title %} Edit note {% endblock %}
+{% block content %}
+<main>
+    <div class="center-text">
+        <h2>Edit Note 🖊️</h2>
+        <br>
+        <hr><br>
+    </div>
+    <div class="center note">
+        <form method="POST" action="/edit-note">
+            <input type="hidden" name="_id" value="{{ note._id }}" />
+            <label for="title"><strong>Title: </strong></label><br>
+            <input type="text" class="form-control" id="title" name="title" value="{{ note.title }}" required>
+            <br><br>
+            <label for="description"><strong>Description: </strong></label><br>
+            <textarea id="description" name="description" rows="3" cols="28"
+                required> {{ note.description }} </textarea>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</main>
+{% endblock %}
+
+</html>

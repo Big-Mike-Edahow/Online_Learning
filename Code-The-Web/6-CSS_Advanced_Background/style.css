@@ -1,0 +1,9 @@
+/* style.css */
+
+body {
+    height: 150vh;
+    background-color: orange;
+    background-image: url('./images/Mountain_Sunset.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

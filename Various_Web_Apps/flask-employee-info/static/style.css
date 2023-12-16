@@ -1,0 +1,130 @@
+/* style.css */
+
+body { 
+    background-color: darkkhaki;
+}
+
+header h1 {
+    float: left;
+    margin-top: 40px;
+    margin-left: 15px;
+    padding: 5px;
+    color: white;
+    font-size: 36px;
+}
+
+header nav {
+    padding: 25px;
+    font-family: 'Roboto', sans-serif;
+    height: 75px;
+    background-color: #f25f5c;
+}
+
+header nav ul {
+    float: right;
+}
+
+header nav ul li {
+    display: inline-block;
+    border-radius: 5px;
+    margin-right: 25px;
+    text-align: center;
+    background-color: #28587B;
+}
+
+header nav ul li a {
+    display: inline-block;
+    width: 150px;
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    text-shadow: 2px 2px 0 #bbbbbb;
+}
+
+h1 {
+    margin-top: 5px;
+    margin-right: 5px;
+    color: white;
+    font-size: 36px;
+}
+
+h2 {
+    margin-top: 5px;
+    color: white;
+    font-size: 36px;
+}
+
+h3 {
+    margin-top: 5px;
+    color: black;
+    font-size: 36px;
+}
+
+table {
+    border: 5px solid black;
+    width: 700px;
+}
+
+td {
+    border: 2px solid black;
+}
+
+.clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.links-and-contact {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.links {
+    justify-self: center;
+}
+
+.links-list {
+    list-style: none;
+    padding: 0;
+}
+
+form input,
+textarea {
+    padding: 5px;
+    border-radius: 5px;
+    width: 240px;
+}
+
+form {
+    width: 250px;
+    margin: 0 auto;
+}
+
+form input[type="submit"] {
+    width: 250px;
+}
+
+.submit-button-wrapper {
+	margin: 20px 0;
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        display: none;
+    }
+
+    li {
+        margin-right: 10px;
+    }
+
+    a {
+        width: 100px;
+        padding: 5px 0;
+        font-size: 16px;
+    }
+}
+

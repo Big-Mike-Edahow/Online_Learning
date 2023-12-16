@@ -1,0 +1,54 @@
+/* style.css */
+
+header img {
+    height: 80px;               /* Set the logo image to be 80px in height. */
+    margin-left: 40px;          /* set the logo image's left margin 40px from left side. */
+}
+
+body {
+    height: 125vh;              /* 125 Viewport Height */
+    background-image: url('https://codetheweb.blog/assets/img/posts/style-a-navigation-bar-css/background.jpg');
+
+    background-size: cover;     /* cover	Resize the background image to cover
+                                   the entire container, even if it has to stretch
+                                   the image or cut a little bit off one of the edges. */
+
+    font-family: sans-serif;
+    margin-top: 80px;           /* Give the body a margin-top equal to the height of the nav-bar, 80px. */
+    padding: 70px;              /* Give the body 30px of padding below from the nav-bar. */
+}
+
+main {
+    color: white;
+}
+
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display:flex;               /* We can make the nav links go to the top of the nav-bar by
+                                    giving our <header> element a display property of flex. */
+
+    align-items: center;        /* We can vertically align our items in the nav-bar using
+                                   align-items: center. */
+
+    box-shadow:
+    0 0 25px 0 black;         /* add a very simple (but effective) shadow to our nav-bar. */
+}
+
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 20px;               /* Space the nav links out. */
+}
+
+header li a {
+    color: black;             /* Set the nav links text color to black. */
+    text-decoration: none;      /* Set the nav links text-decoration to none
+                                   (normally it would be underline). */
+}

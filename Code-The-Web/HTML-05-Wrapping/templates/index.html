@@ -1,0 +1,49 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet">
+    <title>Code The Web HTML-Wrapping</title>
+</head>
+
+<body>
+    <header>
+        <h1>Code The Web HTML-Wrapping</h1>
+        <nav>
+            <ul>
+                <l1><a href="/">Home</a></l1>
+                <li><a href="/login/">Login</a></li>
+                <li><a href="/signup/">Signup</a></li>
+                <li><a href="/contact/">Contact</a></li>
+                <li><a href="/about/">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="login">
+            <h2>Want more articles? <a href="/login">Log in here.</a></h2>
+            Or, you can <a href="/signup">sign up for a new account</a>.
+        </section>
+        <article>
+            <h1>Article name</h1>
+            <p>Article article yeah yeah yeah etc.</p>
+            <p>Second paragraph......</p>
+            <p>Final paragraph</p>
+        </article>
+        <aside>
+            Hey I'm a really annoying ad for some random company!
+            You can click on them and give me MONEY <a href="https://company.com" target="_blank">here</a>.
+        </aside>
+    </main>
+    <br>
+    <footer>
+        <small>&copy; 2023 Mike Jackson &reg;</small>
+    </footer>
+</body>
+
+</html>

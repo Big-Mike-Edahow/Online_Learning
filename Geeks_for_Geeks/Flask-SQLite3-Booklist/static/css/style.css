@@ -1,0 +1,90 @@
+/* style.css */
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(146, 227, 241);
+}
+
+header {
+    display: flex;
+    flex: 100%;
+    height: 100px;
+    background-color: rgb(241, 167, 224);
+    border: 2px solid black;
+}
+
+header h1 {
+    display: flex;
+    flex: 70%;
+    justify-content: left;
+    align-items: left;
+    margin-left: 15px;
+    color: black;
+    position: relative;
+    top: 25px;
+}
+
+header nav {
+    display: flex;
+    flex: 30%;
+    justify-content: right;
+    align-items: right;
+ }
+
+ header nav a {
+    margin-top: 25px;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+ }
+
+ main {
+    margin-top: 50px;
+}
+
+hr {
+    width: 700px;
+}
+
+img {
+    border: 10px solid black;
+}
+
+table {
+    border: 5px solid black;
+    width: 700px;
+    background-color:rgb(245, 203, 203);
+    padding: 5px;
+}
+
+tr, td {
+    border: 2px solid black;
+}
+
+ .center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+.add-book {
+    background-color:rgb(248, 159, 203);
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+}
+
+ .booktable {
+    background-color: rgb(186, 245, 97);
+    width: 800px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: 5px solid black;
+ }

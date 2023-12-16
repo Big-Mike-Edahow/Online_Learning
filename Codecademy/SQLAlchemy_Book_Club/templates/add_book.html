@@ -1,0 +1,39 @@
+<!-- add_book.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/css/style.css" type="text/css" rel="stylesheet">
+    <title>Add new book</title>
+</head>
+
+<body>
+    <main>
+        <section class="center">
+            <h2>Add a new book 🖊️</h2>
+            <br><hr class="headline-hr"><br>
+        </section>
+        <section class="center">
+            <form action="add_book" method="POST">
+                <label for="title">Title: </label>
+                <input class="text-area" type="text" name="title">
+                <br>
+                <label for="author">Author</label>
+                <input class="text-area" type="text" name="author">
+                <br>
+                <label for="month">Month: </label>
+                <input class="text-area" type="text" name="month">
+                <br>
+                <label for="year">Year: </label>
+                <input class="text-area" type="text" name="year">
+                <br><br>
+                <input class="button" type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

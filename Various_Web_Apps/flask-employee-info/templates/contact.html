@@ -1,0 +1,45 @@
+<!-- contact.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends 'base.html' %}
+
+<h1>{% block title %} Contact Big Mike's Trucking {% endblock %}</h1>
+
+{% block content %}
+
+<div class="links-and-contact">
+    <div class="links">
+        <h3>Links</h3>
+        <ul class="links-list">
+            <li><a href="https://github.com/Big-Mike-Edahow" target="_blank">GitHub</a></li>
+            <li><a href="https://twitter.com/Time_Space_Warp" target="_blank">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/in/mike-jackson-119643105/" target="_blank">Linkedin</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <form action="#">
+            <label for="email">
+                <h4>Email</h4>
+                <input id="email" placeholder="Enter your email" />
+            </label>
+
+            <label for="message">
+                <h4>Message</h4>
+                <textarea id="message">Your Message</textarea>
+            </label>
+
+            <div class="submit-button-wrapper">
+                <input type="submit" value="Send Message" id="submit-button" />
+            </div>
+        </form>
+    </div>
+</div>
+<br>
+<br>
+    
+{% endblock %}
+    
+</html>

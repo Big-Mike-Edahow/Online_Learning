@@ -1,0 +1,127 @@
+/* style.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&family=Lato:wght@400;700&display=swap");
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: "Electrolize", sans-serif;
+    display: flex;
+    flex: 100%;
+    height: 75px;
+    background: #1c9bc2;
+    border: 2px solid black;
+}
+
+header h1 {
+    display: flex;
+    flex: 50%;
+    justify-content: left;
+    align-items: left;
+    margin-left: 15px;
+    color: black;
+    position: relative;
+    top: 5px;
+}
+
+header nav {
+    display: flex;
+    flex: 50%;
+    justify-content: right;
+    align-items: right;
+}
+
+header nav a {
+    margin-top: 35px;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+
+header nav a:hover {
+    color: var(--color-orange);
+    text-decoration: none;
+    transition: color 0.15s;
+}
+
+header>nav>a:focus {
+    color: var(--color-lightest);
+}
+
+header>nav>a:active {
+    color: var(--color-lightest);
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    background: #464640;
+}
+
+.container {
+    max-width: var(--c-max-width);
+    padding-inline: var(--c-padding);
+    margin-inline: auto;
+}
+
+.slider {
+    --gap: var(--c-padding);
+    --flex-width: calc((100% - var(--gap) * 2) / 3);
+    --offset-width: calc(((100% - (min(var(--c-max-width), 100%) + (var(--c-padding) * 2))) / 2) + (var(--c-padding) * 2));
+
+    display: flex;
+    gap: var(--gap);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-inline: var(--offset-width);
+    scroll-padding-inline-start: var(--offset-width);
+    background: var(--bg-slider);
+
+    >* {
+        flex: 0 0 var(--flex-width);
+        scroll-snap-align: start;
+    }
+
+    & img {
+        aspect-ratio: 3 / 4;
+        object-fit: cover;
+    }
+}
+
+img {
+    display: block;
+    width: 200px;
+}
+
+figure > img {
+    display: inline;
+    width: 320px;
+    border: 2px solid white;
+}
+
+figcaption {
+    font-size: 1.5em;
+}
+
+footer {
+    background: var(--color-verdigris);
+    padding: 15px 0;
+    text-align: center;
+    color: #333;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+

@@ -1,0 +1,74 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(233, 211, 178);
+}
+
+main {
+    margin-top: 30px;
+}
+
+.headline-h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.headline-hr {
+    background-color: black;
+    color: black;
+    height: 5px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    background-color: beige;
+    margin: 5px;
+    padding: 5px;
+    border: 5px solid black;
+}
+
+th, tr, td {
+    border: 2px solid black;
+    margin: 3px;
+    padding: 3px 5px 3px 5px;
+    font-size: 1.2em;
+    font-weight: 700px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.text-area {
+    background-color:azure;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: .5em;
+    text-decoration: none;
+}
+
+.button {
+    background-color:rgb(224, 147, 119);
+    color: black;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: .5em;
+    text-decoration: none;
+}

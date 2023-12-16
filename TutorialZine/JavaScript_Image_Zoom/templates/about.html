@@ -1,0 +1,29 @@
+<!-- about.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends "base.html" %}
+
+{% block title %} About {% endblock %}
+
+{% block content %}
+
+<main>
+    <h1 class="center">About Big Mike! 🤳</h1>
+    <section class="center">
+        <figure>
+            <img src="{{ url_for('static', filename='images/Big_Mike_Wilson_Arch.jpg') }}" alt="Big Mike" width="320px">
+            <figcaption>Big Mike! 👨</figcaption>
+        </figure>
+        <aside>
+            <p>Big Mike enjoys making simple web apps with<br>
+                Python, Flask, Jinja Templates, Semantic HTML,<br>
+                CSS, and JavaScript. 🌐</p>
+        </aside>
+    </section>
+</main>
+
+{% endblock %}
+
+</html>

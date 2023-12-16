@@ -1,0 +1,47 @@
+<!-- contact.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <h1>Contact Big Mike</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/login/">Login</a></li>
+                <li><a href="/signup/">Signup</a></li>
+                <li><a href="/contact/">Contact</a></li>
+                <li><a href="/about/">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <figure>
+                <figcaption>Contact Big Mike</figcaption>
+                <img src="{{ url_for('static', filename='images/Big_Mike.jpg') }}" alt="Big Mike" width="320px">
+            </figure>
+            <address>
+                Mike Jackson<br>
+                160 S. Cleveland Ave<br>
+                Blackfoot, ID 83221<br>
+                (208) 716-2648<br>
+                perigran_falcon@yahoo.com
+            </address>
+        </section>
+    </main>
+    <br>
+    <footer>
+        <small>&copy; 2023 Mike Jackson &reg;</small>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <h1>Mike Jackson's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="{{url_for('index')}}">Home</a></li>
+                <li><a href="{{url_for('about')}}">About</a></li>
+                <li><a href="{{url_for('contact')}}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Mike Jackson</h1>
+            <figure>
+                <img src="{{ url_for('static', filename='images/Farmland_Rest_Area.jpg') }}" width="320px" height="240px">
+                <figcaption>Farmland Rest Area</figcaption>
+            </figure>
+            <h2>Truck Driver</h2>
+            <figure>
+                <img src="{{ url_for('static', filename='images/Matthews_Missouri.jpg') }}" width="320px" height="240px">
+            </figure>
+            <figcaption>Flying J Matthews, Missouri</figcaption>
+        </section>
+    </main>
+    <br>
+</body>
+
+</html>

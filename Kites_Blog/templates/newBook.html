@@ -1,0 +1,45 @@
+<!-- newBook.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet">
+    <title>Add a Book</title>
+</head>
+
+<body>
+    <header>
+        <h1>Flask SQLAlchemy! 🧙‍♂️</h1>
+        <nav>
+            <a href="{{ url_for('showBooks') }}">Home 🏠</a>
+            <a href="{{ url_for('about') }}">About ❓</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="center">
+                <h1>Add a Book 📕</h1>
+                <br>
+            </div>
+            <div>
+                <form action="#" method="post">
+                    <label for="name">Title:</label>
+                    <input type="text" maxlength="100" name="name" placeholder="Name of the book">
+                    <br>
+                    <label for="author">Author:</label>
+                    <input maxlength="100" name="author" placeholder="Author of the book">
+                    <br>
+                    <label for="genre">Genre:</label>
+                    <input maxlength="100" name="genre" placeholder="Genre of the book">
+                    <br><br>
+                    <button type="submit">Create</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

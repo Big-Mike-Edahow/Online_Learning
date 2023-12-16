@@ -1,0 +1,31 @@
+<!-- base.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet">
+    <title>{% block title %} {% endblock%}</title>
+</head>
+
+<body>
+    <header> 
+        <nav>
+            <h1>Lightbox Image Gallery!📸</h1>
+            <ul>
+                <li><a href="{{url_for('index')}}">Home🏠</a></li>
+                <li><a href="{{url_for('about')}}">About🛈</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    {% block content %}
+
+    {% endblock %}
+
+    <script src="{{ url_for('static', filename='javascript/script.js') }}" type="text/javascript"></script>
+</body>
+
+</html>

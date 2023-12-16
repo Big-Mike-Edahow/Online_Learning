@@ -1,0 +1,16 @@
+/* style.css */
+
+.div1 {
+    background-color: salmon;
+    display: inline;
+}
+
+.div2 {
+    background-color: darkgreen;
+    display: block;
+}
+
+.span1 {
+    background-color: aquamarine;
+    display: inline-block;
+}

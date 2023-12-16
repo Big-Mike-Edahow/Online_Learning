@@ -1,0 +1,28 @@
+/* style.css */
+
+body {
+    margin: 0;
+}
+
+#demo {
+    background-color: cyan;
+    height: 6cm;
+}
+
+#demo-2 {
+    background-color: chartreuse;
+    height: 2em;
+}
+
+#demo-3 {
+    background-color: fuchsia;
+    height: 2em;
+    font-size: 2em;
+}
+
+#demo-4 {
+    background-color: lightslategrey;
+    height: 75vh;
+    width: 50vw;
+    font-size: 2em;
+}

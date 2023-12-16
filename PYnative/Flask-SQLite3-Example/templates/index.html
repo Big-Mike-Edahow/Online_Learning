@@ -1,0 +1,59 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <h1>Python Developers List! 👨‍💻</h1>
+        <nav>
+            <a href="{{ url_for('index') }}">Home 🏡</a>
+            <a href="{{ url_for('about') }}">About ❓</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="center">
+                <h1>Python Developers List!  🐍</h1>
+                <h2>Using SQLite3 Version: {{version[0][0]}} 💾</h2>
+                <br>
+                <a class="add-developer" href="{{ url_for('new_developer') }}"><strong>Add Developer</strong></a>
+            </div>
+            <br>
+        </section>
+        <section>
+            <div class="center developer-table">
+                <table class="center">
+                    <tbody>
+                        <tr>
+                            <th></th>
+                            <th>Developer Name</th>
+                            <th>Email</th>
+                            <th>Joining Date</th>
+                            <th>Salary</th>
+                        </tr>
+                        {% for row in select_all %}
+                        <tr>
+                            <th>{{loop.index}}</th>
+                            <td>{{row.0}}</td>
+                            <td>{{row.1}}</td>
+                            <td>{{row.2}}</td>
+                            <td>{{row.3}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
+

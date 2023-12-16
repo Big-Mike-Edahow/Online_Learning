@@ -1,0 +1,28 @@
+<!-- about.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends "base.html" %}
+
+{% block title %}About 🛈{% endblock %}
+
+{% block content %}
+
+<main>
+    <div class="text-center my-4">
+        <h1>About Big Mike! ♞</h1>
+        <br>
+    </div>
+    <div class="text-center">
+        <figure>
+            <img src="{{ url_for('static', filename='images/Big_Mike.jpg')}}"
+                    alt="Big Mike" width="352px">
+            <figcaption>Big Mike travels from sea to shining sea! ⚓</figcaption>
+        </figure>
+    </div>
+</main>
+{% endblock %}
+
+</html>
+

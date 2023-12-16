@@ -1,0 +1,31 @@
+<!-- display_books.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/css/style.css" type="text/css" rel="stylesheet">
+    <title>Book selected for the year {{year}}</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>Book selected for the year {{year}} 📖</h1>
+        </section>
+        <section>
+            {% for book in books %}
+            <p>{{ book.title }}</p>
+            {% for review in book.reviews %}
+            {% include '_review.html' %}
+            {% endfor %}
+            {% else %}
+            <p> Sorry. There are no books suggested in the year {{year}}</p>
+            {% endfor %}
+        </section>
+    </main>
+</body>
+
+</html>

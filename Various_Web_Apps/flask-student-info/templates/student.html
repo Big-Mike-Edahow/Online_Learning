@@ -1,0 +1,30 @@
+<!-- student.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>{% block title %} Add new student {% endblock %}</h1>
+<form action="{{ url_for('addrec') }}" method="POST">
+    <h3>Student Information</h3>
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name"/>
+    <br>
+    <br>
+    <label for="address">Address:</label>
+    <textarea name="address" id="address" rows="3" cols="25" required></textarea>
+    <br>
+    <br>
+    <label for="city">City:</label>
+    <input type="text" name="city" id="city"/>
+    <br>
+    <br>
+    <label for="zip">Zipcode:</label>
+    <input type="text" name="zip" id="zip"/>
+    <br>
+    <br>
+    <input type="submit" value="Submit Information"/><br>
+    <br>
+</form>
+
+{% endblock %}

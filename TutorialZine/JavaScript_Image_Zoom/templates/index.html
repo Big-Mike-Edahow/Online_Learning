@@ -1,0 +1,33 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends "base.html" %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+
+<main>
+    <section class="container">
+        <h1>JavaScript Image Zoom! 🔎</h1>
+        <div id="my-gallery" class="vanilla-zoom">
+            <div class="sidebar">
+                <img src="{{ url_for('static', filename='images/Moab_Welcome_Sign.jpg') }}" 
+                        alt="Moab Welcome Sign" class="small-preview">
+                
+                <img src="{{ url_for('static', filename='images/Moab_Vaquerro.jpg') }}" 
+                        alt="Moab Vaquerro" class="small-preview">
+
+                <img src="{{ url_for('static', filename='images/Moab_Hildalgo.jpg') }}" 
+                        alt="Moab Hildalgo" class="small-preview">
+            </div>
+            <div class="zoomed-image"></div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}
+
+</html>

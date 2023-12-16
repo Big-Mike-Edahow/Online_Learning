@@ -1,0 +1,43 @@
+<!-- new-book.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='css/style.css')}}" type="text/css" rel="stylesheet">
+    <title>Add a new book</title>
+</head>
+
+<body>
+    <header>
+        <h1>Big Mike's Booklist! 📚</h1>
+        <nav>
+            <a href="{{ url_for('index') }}">Home 🏡</a>
+            <a href="{{ url_for('about') }}">About 🛈</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="center">
+                <h1>Add a book! 📘📙📕</h1>
+            </div>
+            <br>
+            <div class="center">
+                <form action="/add-book" method="POST">
+                    <label for="book-name">Enter Book Name: </label>
+                    <input type="text" name="book-name" required><br>
+                    <label for="author">Enter Author: </label>
+                    <input type="text" name="author" required><br>
+                    <label for="genre">Enter Genre:</label>
+                    <input type="text" name="genre" required><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
+

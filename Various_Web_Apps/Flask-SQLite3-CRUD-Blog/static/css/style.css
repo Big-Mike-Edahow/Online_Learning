@@ -1,0 +1,127 @@
+/* style.css */
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: khaki;
+}
+
+header {
+    display: flex;
+    flex: 100%;
+    background-color: darksalmon;
+    border: 2px solid black;
+}
+
+header h1 {
+    display: flex;
+    flex: 30%;
+    justify-content: left;
+    align-items: left;
+    margin-left: 10px;
+    position: relative;
+    top: 25px;
+}
+
+header nav {
+    display: flex;
+    flex: 70%;
+    justify-content: right;
+    align-items: right;
+ }
+
+ header nav a {
+    margin-top: 25px;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+ }
+
+main {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.add-post {
+    line-height: 2em;
+    margin: 5px;
+    padding: 5px;
+    background-color: lightblue;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+}
+
+.add-edit-post {
+    line-height: 2em;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    background-color: lightblue;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+}
+
+.post-body {
+    background-color: lightskyblue;
+    margin: 5px;
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.update {
+    line-height: 2em;
+    margin: 5px;
+    padding: 5px;
+    background-color:darkseagreen;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+}
+
+.delete {
+    line-height: 2em;
+    margin: 5px;
+    padding: 5px;
+    background-color:darkseagreen;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+}
+
+.title {
+    line-height: 2em;
+    margin: 5px;
+    padding: 5px;
+    background-color: mediumpurple;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+}
+
+.edit-post-text {
+    line-height: 1.2em;
+    margin: 5px;
+    padding: 5px;
+    background-color: floralwhite;
+}
+
+.submit {
+    line-height: 1em;
+    margin: 5px;
+    padding: 5px;
+    background-color:darkseagreen;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+}

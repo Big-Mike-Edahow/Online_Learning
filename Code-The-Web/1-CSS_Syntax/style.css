@@ -1,0 +1,33 @@
+/* style.css */
+
+h1 {
+    color: red;
+}
+
+.another-class {
+    color: blue;
+}
+
+.classes {
+    color: gold;
+}
+
+#my-id {
+    color: magenta;
+}
+
+ul span {
+    color: orange;
+}
+
+ul li span {
+    color: orange;
+}
+
+.my-ul #my-li span {
+    color: orange;
+}
+
+h5.classes {
+    color: pink;
+}

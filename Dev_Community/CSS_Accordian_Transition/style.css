@@ -1,0 +1,84 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(199, 224, 154);
+}
+
+main {
+    margin-top: 30px;
+}
+
+.headline-h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.headline-hr {
+    background-color: black;
+    color: black;
+    width: 700px;
+    height: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.accordion {
+    max-width: 500px;
+    background-color: black;
+
+    font-family: system-ui;
+    color: white;
+
+    border-bottom: 5px solid limegreen;
+    cursor: pointer;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.accordion-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.accordion-body {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: 250ms grid-template-rows ease;
+    margin: 5px;
+    padding: 5px;
+}
+
+.accordion:hover .accordion-body {
+    grid-template-rows: 1fr;
+}
+
+.accordion-body > div {
+    overflow: hidden;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+

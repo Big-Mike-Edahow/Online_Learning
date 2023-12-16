@@ -1,0 +1,45 @@
+<!-- books.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <h1>Flask SQLAlchemy! 🧙‍♂️</h1>
+        <nav>
+            <a href="{{ url_for('showBooks') }}">Home 🏠</a>
+            <a href="{{ url_for('about') }}">About ❓</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1 class="center">Big Mike's Favorite Books! 📚</h1>
+            <br>
+            <div>
+                <a href="{{url_for('newBook')}}"><button>Add Another Book 📕</button></a>
+                <br><br>
+                <ol>
+                    {% for book in books %}
+                    <li> {{book.title}} by {{book.author}}</li>
+                    <a href="{{url_for('editBook', book_id = book.id )}}">
+                        Edit
+                    </a>
+                    <a href="{{url_for('deleteBook', book_id = book.id )}}" style="margin-left: 10px;">
+                        Delete
+                    </a>
+                    <br> <br>
+                    {% endfor %}
+                </ol>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

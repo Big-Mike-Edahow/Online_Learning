@@ -1,0 +1,56 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <h1>Big Mike's Booklist! 📚</h1>
+        <nav>
+            <a href="{{ url_for('index') }}">Home 🏡</a>
+            <a href="{{ url_for('about') }}">About 🛈</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="center">
+                <h1>Big Mike's Favorite Books! 📖</h1>
+                <br>
+                <a class="add-book" href="{{ url_for('new_book') }}"><strong>Add Book</strong></a>
+            </div>
+            <br>
+        </section>
+        <section>
+            <div class="center booktable">
+                <table class="center">
+                    <tbody>
+                        <tr>
+                            <th></th>
+                            <th>Book Name</th>
+                            <th>Author</th>
+                            <th>Genre</th>
+                        </tr>
+                        {% for row in show_all %}
+                        <tr>
+                            <th>{{ loop.index }}</th>
+                            <td>{{ row.0 }}</td>
+                            <td>{{ row.1 }}</td>
+                            <td>{{ row.2 }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
+

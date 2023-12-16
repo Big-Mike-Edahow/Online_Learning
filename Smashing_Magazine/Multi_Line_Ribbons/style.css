@@ -1,0 +1,114 @@
+/* style.css */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  grid-auto-flow: column;
+  gap: 50px;
+  min-height: 100vh;
+  line-height: 1.8;
+  background-color: antiquewhite;
+}
+
+main {
+	margin-top: 30px;
+}
+
+.headline-h1 {
+	font-size: 2em;
+	font-weight: 600;
+	color: black;
+}
+
+.headline-hr {
+	background-color: black;
+	color: black;
+	height: 5px;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+h1 {
+  --c: #d81a14;
+  
+  padding-inline: .8lh;
+  text-align: center;
+  line-height: 1.8;
+  color: #fff;
+}
+.one {
+  -webkit-mask:
+    linear-gradient(45deg ,#0000 50%,#000 0) 0%   calc(100% - .1lh)/.8lh .8lh no-repeat,
+    linear-gradient(-45deg,#0000 50%,#000 0) 100% calc(100% - .1lh)/.8lh .8lh no-repeat,
+    linear-gradient(45deg,#000 50%,#0000 0) 100% .1lh/.8lh .8lh no-repeat,
+    conic-gradient(from 225deg at .9lh,#0000 25%,#000 0) 
+     0   1lh/51% 2lh repeat-y,
+    conic-gradient(from 45deg at calc(100% - .9lh),#0000 25%,#000 0) 
+     100% 0 /51% 2lh repeat-y;
+  background:
+    linear-gradient(var(--c) 80%,#0000 0) 0 .1lh/100% 1lh,
+    linear-gradient(90deg,color-mix(in srgb,var(--c),#000 35%) 1.6lh,#0000 0) -.8lh 50%/100% calc(100% - .3lh) repeat-x;
+}
+.two {
+  border-block: .5lh solid #0000;
+  background: 
+    linear-gradient(var(--c) 80%,#0000 0) 0 .1lh/100% 1lh padding-box,
+    linear-gradient(#0000 50%,color-mix(in srgb,var(--c),#000 35%) 0) 0 0/.8lh 2lh repeat-y border-box,
+    linear-gradient(color-mix(in srgb,var(--c),#000 35%) 50%,#0000 0) 100% 0/.8lh 2lh repeat-y border-box;
+  -webkit-mask:
+    linear-gradient(#000 1lh,#0000 0) 0 -.5lh,
+    conic-gradient(from 225deg at .9lh,#0000 25%,#000 0) 
+     0    1lh/51% 2lh repeat-y padding-box,
+    conic-gradient(from 45deg at calc(100% - .9lh),#0000 25%,#000 0) 
+     100% 0  /51% 2lh repeat-y padding-box;
+  clip-path: polygon(0 0,calc(100% - .8lh) 0,calc(100% - .4lh) .3lh,100% 0,100% 100%,calc(100% - .4lh) calc(100% - .3lh), calc(100% - .8lh) 100%,.8lh 100%,.4lh calc(100% - .3lh),0 100%)
+}
+
+@supports not (height:1lh) {
+  h1 {
+    padding-inline: 1.8em;
+  }
+  .one {
+    -webkit-mask:
+      linear-gradient(45deg ,#0000 50%,#000 0) 0%   calc(100% - .18em)/1.44em 1.44em no-repeat,
+      linear-gradient(-45deg,#0000 50%,#000 0) 100% calc(100% - .18em)/1.44em 1.44em no-repeat,
+      linear-gradient(45deg,#000 50%,#0000 0) 100% .18em/1.44em 1.44em no-repeat,
+      conic-gradient(from 225deg at 1.62em,#0000 25%,#000 0) 
+       0   1.8em/51% 3.6em repeat-y,
+      conic-gradient(from 45deg at calc(100% - 1.62em),#0000 25%,#000 0) 
+       100% 0 /51% 3.6em repeat-y;
+    background:
+      linear-gradient(var(--c) 80%,#0000 0) 0 .18em/100% 1.8em,
+      linear-gradient(90deg,color-mix(in srgb,var(--c),#000 35%) 2.88em,#0000 0) -1.44em 50%/100% calc(100% - .54em) repeat-x;
+  }
+  .two {
+    border-block: .9em solid #0000;
+    background: 
+      linear-gradient(var(--c) 80%,#0000 0) 0 .18em/100% 1.8em padding-box,
+      linear-gradient(#0000 50%,color-mix(in srgb,var(--c),#000 35%) 0) 0 0/1.44em 3.6em repeat-y border-box,
+      linear-gradient(color-mix(in srgb,var(--c),#000 35%) 50%,#0000 0) 100% 0/1.44em 3.6em repeat-y border-box;
+    -webkit-mask:
+      linear-gradient(#000 1.8em,#0000 0) 0 -.9em,
+      conic-gradient(from 225deg at 1.62em,#0000 25%,#000 0) 
+       0    1.8em/51% 3.6em repeat-y padding-box,
+      conic-gradient(from 45deg at calc(100% - 1.62em),#0000 25%,#000 0) 
+       100% 0  /51% 3.6em repeat-y padding-box;
+    clip-path: polygon(0 0,calc(100% - 1.44em) 0,calc(100% - .72em) .54em,100% 0,100% 100%,calc(100% - .72em) calc(100% - .54em), calc(100% - 1.44em) 100%,1.44em 100%,.72em calc(100% - .54em),0 100%)
+  }
+}
+
+
+.center {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+

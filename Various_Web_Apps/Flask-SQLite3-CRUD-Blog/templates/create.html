@@ -1,0 +1,29 @@
+<!-- create.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends 'base.html' %}
+{% block title %} Add New Post {% endblock %}
+{% block content %}
+
+<main>
+    <section>
+        <h2 class="add-edit-post">Add New Post</h2>
+        <br><hr><br>
+        <div>
+            <form id="post" method="get" action="/insert">
+                <label class="title" for="title">Title: </label>
+                <input class="edit-post-text" text" name="title" placeholder="Enter post title..."><br>
+                <textarea class="edit-post-text" name="post" placeholder="Leave your post here..." cols="80"rows="8">
+                </textarea><br>
+                <button class="submit" type="submit">Post</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+{% endblock %}
+
+</html>
+

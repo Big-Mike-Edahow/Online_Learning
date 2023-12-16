@@ -1,0 +1,77 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link a href="./static/css/style.css" type="text/css" rel="stylesheet">
+    <title>Code The Web-HTML Structure</title>
+</head>
+
+<body>
+    <header>
+        <h1>Code The Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#About">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <Section id="Home">
+            <h2>Home</h2>
+            <figure>
+                <img src="./static/images/Big_Mike.jpg" alt="Big Mike" width="240px" height="260px">
+                <figcaption>Big Mike<br>Aspiring Web Developer</figcaption>
+            </figure>
+        </Section>
+        <Section id="Contact">
+            <h2>Contact</h2>
+            <address>
+                Mike Jackson<br>
+                Website: <a href="https://Big-Mike-Edahow.github.io" target="_blank">GitHub Pages</a><br>
+                Email: perigran_falcon@yahoo.com<br>
+            </address>
+        </Section>
+        <Section id="About">
+            <article>
+                <h2>About</h2>
+                <p>Big Mike was born in Salt Lake City, Utah.<br>
+                    He was raised in Southeast Idaho, where he<br>
+                    currently resides.<br><br>
+                    As a hobby, Big Mike likes to dabble in a little<br>
+                    bit of code.<br>
+                <aside>
+                    <pre>
+                        <code>
+                            /* hello.c */
+        
+                            #include &lt;stdio.h&gt;
+        
+                            int main()
+                            {
+                                printf("Hello World!\n");
+        
+                                return 0;
+                            }
+                            
+                            <samp>&gt; ./hello&block;</samp>
+                            <samp>&gt; Hello World!</samp>
+                            <samp>&gt; &block;</samp>
+                        </code>
+                    </pre>
+                </aside>    
+            </article>
+        </Section>
+    </main>
+    <footer>
+        <small>&copy; 2023 Mike Jackson &reg;</small>
+    </footer>
+</body>
+
+</html>

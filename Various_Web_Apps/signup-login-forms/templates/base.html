@@ -1,0 +1,34 @@
+<!-- base.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet">
+    <title>Flask Auth Example</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Flask Login</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}" class="navbar-item">Home</a></li>
+                <li><a href="{{ url_for('profile') }}" class="navbar-item">Profile</a></li>
+                <li><a href="{{ url_for('login') }}" class="navbar-item">Login</a></li>
+                <li><a href="{{ url_for('signup') }}" class="navbar-item">Sign Up</a></li>
+                <li><a href="{{ url_for('logout') }}" class="navbar-item">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    {% block content %}
+
+    {% endblock %}
+
+</body>
+
+</html>

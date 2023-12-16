@@ -1,0 +1,55 @@
+<!-- home.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/css/style.css" type="text/css" rel="stylesheet">
+    <title>Codecademy Book Club! 📕📗📘</title>
+</head>
+
+<body>
+    <main>
+        <section class="center">
+            <h1 class="headline-h1"> Welcome to your favorite Book Club! 👋</h1>
+            <br>
+            <hr class="headline-hr"><br>
+        </section>
+        <section class="center">
+            <a class="button" href="{{ url_for('add_book') }}">Add Book</a>
+            <br><br>
+            <table class="center">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Book Title</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">Month</th>
+                        <th scope="col">Year</th>
+                    </tr>
+                </thead>
+                {% if not books%}
+                <div class="text-center">
+                    <h3 class="my-5">No Records to Display!</h3>
+                </div>
+                {% else %}
+                <tbody>
+                    {% for book in books %}
+                    <tr>
+                        <th scope="row">{{book.id}}</th>
+                        <td>{{book.title}}</td>
+                        <td>{{book.author}}</td>
+                        <td>{{book.month}}</td>
+                        <td>{{book.year}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+                {% endif %}
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>

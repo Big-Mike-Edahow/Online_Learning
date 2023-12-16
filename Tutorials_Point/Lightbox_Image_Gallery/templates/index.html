@@ -1,0 +1,39 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends 'base.html' %}
+
+<h1>{% block title %} Lightbox Image Gallery {% endblock %}</h1>
+
+{% block content %}
+
+<main>
+    <h3>Lightbox Image Gallery🖼️</h3>
+    <div class="gallery">
+        <a href="{{ url_for('static', filename='images/Pacific_Recycling_Mayfield.jpg') }}">
+            <img src="{{ url_for('static', filename='images/Pacific_Recycling_Mayfield.jpg') }}"
+                alt="Pacific Recycling Mayfield" width="320px"></a>
+
+        <a href="{{ url_for('static', filename='images/Oklahoma_Dinosaur.jpg') }}">
+            <img src="{{ url_for('static', filename='images/Oklahoma_Dinosaur.jpg') }}" 
+            alt="Oklahoma_Dinosaur" width="320px"></a>
+
+        <a href="{{ url_for('static', filename='images/Oklahoma_Sign.jpg') }}">
+            <img src="{{ url_for('static', filename='images/Oklahoma_Sign.jpg') }}"
+                alt="Oklahoma Sign" width="320px"></a>
+
+        <a href="{{ url_for('static', filename='images/Rigby_Yard.jpg') }}">
+            <img src="{{ url_for('static', filename='images/Rigby_Yard.jpg') }}" 
+                alt="Rigby_Yard" width="320px"></a>
+    </div>
+    <div class="lightbox">
+        <img src="">
+        <button class="close">X</button>
+    </div>
+</main>
+
+{% endblock %}
+
+</html>

@@ -1,0 +1,54 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet">
+    <title>Code The Web HTML-Lists</title>
+</head>
+
+<body>
+    <header>
+        <h1>Code The Web HTML-Lists</h1>
+        <nav>
+            <ul>
+                <li><a href="https://codetheweb.blog/" target="_blank">Home</a></li>
+                <li><a href="https://codetheweb.blog/newsletter" target="_blank">Newsletter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Ordered Lists</h2>
+            <ol>
+                <li>Item</li>
+                <li>Another item</li>
+                <li>A third item</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Unordered Lists</h2>
+            <ul>
+                <li>Item</li>
+                <li>Another item</li>
+                <li>A third item</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Definition Lists</h2>
+            <dl>
+                <dt>Ordered lists</dt>
+                <dd>Lists with numbers</dd>
+                <dt>Unordered lists</dt>
+                <dd>Lists with bullet points</dd>
+                <dt>Definition lists</dt>
+                <dd>Lists used to define things</dd>
+            </dl>
+        </section>
+    </main>
+</body>
+
+</html>

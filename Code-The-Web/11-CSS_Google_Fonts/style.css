@@ -1,0 +1,17 @@
+/* style.css */
+
+@import url('https://fonts.googleapis.com/css?family=Ribeye+Marrow');
+
+body {
+  background-color: forestgreen;
+}
+
+span {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 200px;
+    letter-spacing: 5px;
+    font-family: "Ribeye Marrow";
+  }
+
+  

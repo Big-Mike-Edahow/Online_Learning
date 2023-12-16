@@ -1,0 +1,25 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<main>
+    <div class="center">
+        <h1>Flask Login Example</h1>
+        <h2>Easy authentication and authorization in Flask.</h2>
+    </div>
+    <section class="center">
+        <figure>
+            <img src="{{ url_for('static', filename='images/Python_and_Flask.png') }}" 
+            alt="Python and Flask" width="320px">
+        </figure>
+    </section>
+</main>
+
+{% endblock %}
+
+</html>

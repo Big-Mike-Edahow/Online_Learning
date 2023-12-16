@@ -1,0 +1,26 @@
+<!-- profile.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<main>
+    <h1 class="center">Welcome, Big Mike!🤗</h1>
+    <section class="profile-grid">
+        <figure>
+            <img src="{{ url_for('static', filename='images/Big_Mike_Idaho_Timber.jpg')}}" alt="Big Mike" width="320px">
+            <figcaption>Big Mike👷</figcaption>
+        </figure>
+        <figure>
+            <img src="{{ url_for('static', filename='images/Idaho_Timber.jpg')}}" alt="Idaho Timber" width="320px">
+            <figcaption>Idaho Timber🌲</figcaption>
+        </figure>
+    </section>
+</main>
+
+{% endblock %}
+
+</html>

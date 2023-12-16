@@ -1,0 +1,30 @@
+<!-- about.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends "base.html" %}
+
+<h1>{% block title %} About Big Mike {% endblock %}</h1>
+
+{% block content %}
+
+<main>
+    <h1>About Big Mike!🧔</h1>
+    <section>
+        <figure>
+            <img src="{{ url_for('static', filename='images/Big_Mike_Nephi.jpg') }}" 
+                    alt="Big Mike" width="320px">
+        <figcaption>Big Mike😊</figcaption>
+        </figure>
+        <aside>
+            <p>Big Mike is a Jack of All Trades,🧑‍🔧<br>
+                But a Master of None.🥷</p>
+        </aside>
+    </section>
+
+</main>
+
+{% endblock %}
+
+</html>

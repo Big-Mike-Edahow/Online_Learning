@@ -1,0 +1,33 @@
+<!-- post.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends 'base.html' %}
+{% block title %} Home {% endblock %}
+{% block content %}
+
+<main>
+    <section>
+        <hr><br>
+        <h3 class="title"><strong>{{post[1]}}</strong></h3>
+        <br>
+        <div class="post-body">
+            {{post[2]}}
+            <button onclick="history.back()">Go Back</button>
+        </div>
+        <br>
+        <div>
+            <p>
+                <a class="update" href="/edit?title={{post[1]}}&post={{post[2]}}&_id={{post[0]}}">Update</a>
+                <a class="delete" href="/delete/{{post[0]}}">Delete</a>
+            </p>
+        </div>
+        <br><hr>
+    </section>
+</main>
+
+{% endblock %}
+
+</html>
+
